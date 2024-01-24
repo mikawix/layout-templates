@@ -12,9 +12,22 @@ export interface MasonryProps {
 export const Masonry = ({ className }: MasonryProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div />
-            <div />
-            <div />
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+            />
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+            />
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+            />
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+            />
         </div>
     );
 };

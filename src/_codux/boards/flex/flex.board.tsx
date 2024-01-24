@@ -1,11 +1,12 @@
 import { createBoard } from '@wixc3/react-board';
-import { Grid } from '../../../components/grid/grid';
+import { Flex } from '../../../components/flex/flex';
 
 export default createBoard({
-    name: 'Grid',
-    Board: () => <Grid />,
+    name: 'Flex',
+    Board: () => <Flex />,
     isSnippet: true,
     environmentProps: {
         windowWidth: 1024,
+        windowHeight: 768,
     },
 });

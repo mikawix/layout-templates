@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.area {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: stretch;
+}
