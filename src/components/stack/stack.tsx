@@ -13,19 +13,18 @@ export const Stack = ({ className }: StackProps) => {
     return (
         <div className={classNames(className, styles.grid)}>
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_01.jpg"
                 alt=""
-                className={classNames(styles.img, styles.area)}
+                className={styles.area}
+                height={undefined}
             />
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_02.jpg"
                 alt=""
-                className={styles.img}
             />
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_03.jpg"
                 alt=""
-                className={styles.img}
             />
         </div>
     );

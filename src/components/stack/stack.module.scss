@@ -2,16 +2,14 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-}
-
-.img {
-    height: 100%;
-    width: 100%;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0em;
 }
 
 .area {
     grid-row-start: 1;
+    align-self: center;
     grid-row-end: 3;
-    align-self: stretch;
 }

@@ -11,21 +11,21 @@ export interface GridProps {
  */
 export const Grid = ({ className }: GridProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <div className={classNames(styles.grid, className)}>
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_04.jpg"
                 alt=""
             />
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_05.jpg"
                 alt=""
             />
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_06.jpg"
                 alt=""
             />
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_03.jpg"
                 alt=""
             />
         </div>
