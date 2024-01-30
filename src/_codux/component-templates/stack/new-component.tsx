@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import styles from './grid.module.scss';
+import styles from './new-component.module.scss';
 
-export interface GridProps {
+export interface NewComponentProps {
     className?: string;
 }
 
@@ -9,19 +9,16 @@ export interface GridProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Grid = ({ className }: GridProps) => {
+export const NewComponent = ({ className }: NewComponentProps) => {
     return (
-        <div className={classNames(styles.grid, className)}>
+        <div className={classNames(className, styles.grid)}>
             <img
-                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_04.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_01.jpg"
                 alt=""
+                className={styles.area}
             />
             <img
-                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_05.jpg"
-                alt=""
-            />
-            <img
-                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_06.jpg"
+                src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_02.jpg"
                 alt=""
             />
             <img
