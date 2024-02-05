@@ -1,15 +1,17 @@
 import classNames from 'classnames';
-import styles from './new-component.module.scss';
+import styles from './new-component-6.module.scss';
 
-export interface NewComponentProps {
+export interface NewComponent6Props {
     className?: string;
 }
 
 /**
+ * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const NewComponent = ({ className }: NewComponentProps) => {
-    return <div className={classNames(styles.root, className)}>
+export const NewComponent6 = ({ className }: NewComponent6Props) => {
+    return (
+        <div className={classNames(styles.root, className)}>
             <div>
                 <img
                     src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_04.jpg"
@@ -39,5 +41,5 @@ export const NewComponent = ({ className }: NewComponentProps) => {
                 />
             </div>
         </div>
-
+    );
 };
