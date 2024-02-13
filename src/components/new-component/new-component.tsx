@@ -9,7 +9,8 @@ export interface NewComponentProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const NewComponent = ({ className }: NewComponentProps) => {
-    return <div className={classNames(styles.root, className)}>
+    return (
+        <div className={classNames(styles.root, className)}>
             <div>
                 <img
                     src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_04 (1).jpg"
@@ -39,5 +40,5 @@ export const NewComponent = ({ className }: NewComponentProps) => {
                 />
             </div>
         </div>
-
+    );
 };

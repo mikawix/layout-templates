@@ -11,24 +11,24 @@ export interface NewComponentProps {
  */
 export const NewComponent = ({ className }: NewComponentProps) => {
     return (
-<div className={classNames(className, styles.grid)}>
+        <div className={classNames(className, styles.grid)}>
             <div className={styles.area}>
                 <img
-                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_01.jpg"
+                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_01 (1).jpg"
                     alt=""
                     className={styles.img}
                 />
             </div>
             <div>
                 <img
-                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_02.jpg"
+                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_06 (1).jpg"
                     alt=""
                     className={styles.img}
                 />
             </div>
             <div>
                 <img
-                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_03.jpg"
+                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_03 (1).jpg"
                     alt=""
                     className={styles.img}
                 />
