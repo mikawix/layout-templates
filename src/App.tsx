@@ -1,4 +1,5 @@
 import styles from './App.module.scss';
+import prev from './assets/preview-symbol.svg';
 
 function App() {
     return (
@@ -13,7 +14,9 @@ function App() {
             >
                 <h2>Welcome to your first board 🎉</h2>
                 <p>
-                    Board is your rendering environment to edit your components. <br />
+                    Board is a rendering environment that allows you to visually edit your
+                    components.
+                    <br />
                     You can use boards to edit different variations of your components. <br />
                     Double click to edit your first component here.
                 </p>
@@ -32,8 +35,10 @@ function App() {
                     Drag here elements from +Add elements panel
                 </div>
                 <p style={{ color: '#888888' }}>
-                    Click on preview and learn more here:{' '}
-                    <a href="https://help.codux.com/kb/en/article/what-are-boards">About Boards</a>{' '}
+                    Click on preview <img src={prev} alt="" />and learn more here: 
+                    <a href="https://help.codux.com/kb/en/article/what-are-boards">
+                        About Boards
+                    </a>{' '}
                     |{' '}
                     <a href="https://help.codux.com/kb/en/article/what-are-components">
                         About Components
