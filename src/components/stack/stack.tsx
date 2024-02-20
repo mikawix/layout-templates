@@ -1,25 +1,20 @@
 import classNames from 'classnames';
-import styles from './new-component.module.scss';
+import styles from './stack.module.scss';
 
-export interface NewComponentProps {
+export interface StackProps {
     className?: string;
 }
 
 /**
+ * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const NewComponent = ({ className }: NewComponentProps) => {
-    return <div className={classNames(styles.root, className)}>
-            <div>
+export const Stack = ({ className }: StackProps) => {
+    return (
+        <div className={classNames(className, styles.grid)}>
+            <div className={styles.area}>
                 <img
-                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_04 (1).jpg"
-                    alt=""
-                    className={styles.img}
-                />
-            </div>
-            <div>
-                <img
-                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_05 (1).jpg"
+                    src="https://wixmp-b7f7090100b13623109851bc.wixmp.com/layouters/img_01 (1).jpg"
                     alt=""
                     className={styles.img}
                 />
@@ -39,5 +34,5 @@ export const NewComponent = ({ className }: NewComponentProps) => {
                 />
             </div>
         </div>
-
+    );
 };

@@ -1,59 +1,50 @@
-import { useState } from 'react';
-import classNames from 'classnames';
-import { ReactComponent as ReactLogo } from './assets/react.svg';
-import { ReactComponent as ViteLogo } from './assets/vite.svg';
-import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
-import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
+import prev from './assets/preview-symbol.svg';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <div className={styles.App}>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <ViteLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo)}
-                        title="Vite logo"
-                    />
-                </a>
-                <a href="https://reactjs.org" target="_blank">
-                    <ReactLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.react)}
-                        title="React logo"
-                    />
-                </a>
-                <a href="https://www.typescriptlang.org/" target="_blank">
-                    <TypescriptLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.ts)}
-                        title="Typescript logo"
-                    />
-                </a>
-                <a href="https://sass-lang.com/" target="_blank">
-                    <ScssLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.scss)}
-                        title="SCSS logo"
-                    />
-                </a>
-            </div>
-            <div className={styles.card}>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+            <div
+                style={{
+                    padding: '2em',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}
+            >
+                <h2>Welcome to your first board 🎉</h2>
                 <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
+                    Board is a rendering environment that allows you to visually edit your
+                    components.
+                    <br />
+                    You can use boards to edit different variations of your components. <br />
+                    Double click to edit your first component here.
+                </p>
+                <div
+                    style={{
+                        width: '800px',
+                        height: '250px',
+                        borderRadius: '30px',
+                        border: '2px dashed #888',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#888888',
+                    }}
+                >
+                    Drag here elements from +Add elements panel
+                </div>
+                <p style={{ color: '#888888' }}>
+                    Click on preview <img src={prev} alt="" />and learn more here: 
+                    <a href="https://help.codux.com/kb/en/article/what-are-boards">
+                        About Boards
+                    </a>{' '}
+                    |{' '}
+                    <a href="https://help.codux.com/kb/en/article/what-are-components">
+                        About Components
+                    </a>
                 </p>
             </div>
-            <p className={styles['read-the-docs']}>
-                Click on the Vite and React logos to learn more
-            </p>
         </div>
     );
 }
