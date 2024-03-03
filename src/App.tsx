@@ -34,12 +34,18 @@ function App() {
                 >
                     Drag here elements from +Add elements panel
                 </div>
-                <p style={{ color: '#888888' }}>
-                    Click on preview <img src={prev} alt="" />and learn more here: 
-                    <a href="https://help.codux.com/kb/en/article/what-are-boards">
-                        About Boards
-                    </a>{' '}
-                    |{' '}
+                <p
+                    style={{
+                        color: '#888888',
+                        textAlign: 'center',
+                        display: 'flex',
+                        alignContent: 'center',
+                        gap: '5px'
+                    }}
+                >
+                    Click on preview <img src={prev} alt="" style={{boxShadow:'1px 1px 5px'}} />and learn more here:
+                    <a href="https://help.codux.com/kb/en/article/what-are-boards">About Boards</a>
+                    |
                     <a href="https://help.codux.com/kb/en/article/what-are-components">
                         About Components
                     </a>
