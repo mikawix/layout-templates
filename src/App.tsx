@@ -1,4 +1,6 @@
 import styles from './App.module.scss';
+import component from './assets/component-symbol.svg';
+import add from './assets/add-symbol.svg';
 import prev from './assets/preview-symbol.svg';
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
                     components.
                     <br />
                     You can use boards to edit different variations of your components. <br />
-                    Double click to edit your first component here.
+                    Double click to edit your first component here. Double click to edit your first
+                    component here.
+                    <img src={component} alt="" />
                 </p>
                 <div
                     style={{
@@ -32,7 +36,12 @@ function App() {
                         color: '#888888',
                     }}
                 >
-                    Drag here elements from +Add elements panel
+                    Drag here elements from
+                    <img
+                        src={add}
+                        alt=""
+                    />
+                    Add elements panel
                 </div>
                 <p
                     style={{
@@ -40,12 +49,13 @@ function App() {
                         textAlign: 'center',
                         display: 'flex',
                         alignContent: 'center',
-                        gap: '5px'
+                        gap: '5px',
                     }}
                 >
-                    Click on preview <img src={prev} alt="" style={{boxShadow:'1px 1px 5px'}} />and learn more here:
-                    <a href="https://help.codux.com/kb/en/article/what-are-boards">About Boards</a>
-                    |
+                    Click on preview{' '}
+                    <img src={prev} alt="" style={{ boxShadow: '0.71px 0.71px 5px #888888' }} />
+                    and learn more here:
+                    <a href="https://help.codux.com/kb/en/article/what-are-boards">About Boards</a>|
                     <a href="https://help.codux.com/kb/en/article/what-are-components">
                         About Components
                     </a>
