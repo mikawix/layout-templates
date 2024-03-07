@@ -6,9 +6,12 @@ function App() {
     return (
         <div className={styles.App}>
             <h2>Welcome to your App Component 🎉</h2>
-            Double click to edit App component. <br />
-            Drag here elements from <b>+ Add elements panel</b>
-            <p style={{ fontSize: '12px' }}>
+            <span>
+                Double click to edit App component
+                <br />
+                &amp; drag here elements from + Add <b>Elements</b> Panel
+            </span>
+            <p style={{ fontSize: '12px', marginTop: '80px' }}>
                 This project is using Vite + TypeScript. Visit vitejs.dev to learn more.
             </p>
         </div>
